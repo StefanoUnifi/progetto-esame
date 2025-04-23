@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Stampa - Ultime notizie di cronaca e news dall'Italia e dal mondo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<!--Nota che tutti gli elementi lasciano un margine sia dal bordo destro che sinistro che è delle stesse dimensioni per tutti gli elementi-->
+
+<body>
+<!--div che contiene l'articolo importante della giornata-->
+    <div class="banner pad">
+        <video class="video-banner" controls>
+            <source src="videos/video-example.mp4" type="video/mp4">
+        </video>
+        <a href="#">
+            <h2>Notizia importante del giorno</h2>
+        </a>
+    </div>
+
+<!-- piccolo div tra div precedente e header -->
+<div class="pad pre-header doppia-lista-lati lista-barrata">
+    <ul>
+        <a href="#"><li>IL QUOTIDIANO</li></a>
+        <a href="#"><li>PREMIUM</li></a>
+    </ul>
+    <ul>
+        <a href="#"><li>ABBONATI</li></a>
+        <a href="#"><li>ACCEDI</li></a>
+    </ul>
+</div>
+
+<!--Intestazione della pagina, deve rimanere fissa nella parte superiore della pagina anche quando si scrolla verso il basso-->
+    <header class="pad">
+
+        <div class="left">
+            <ul>
+                <li><a href="#">≡MENU</a></li>
+                <li><a href="#">CERCA</a></li>
+            </ul>
+        </div>
+
+         <div class="center">
+            <a href="#" title="La Stampa">
+                <h1>LA STAMPA</h1>
+            </a>
+            <h6>Direttore Andrea Malaguti</h6>
+        </div>
+
+        <div class="right">
+            <form class="search-bar" action="#" method="get">
+                <input type="text" placeholder="Torino" />
+            </form>
+        </div>
+    </header>
+<!--NB: questo è l'unico elemento fisso della pagina-->
+
+<!--lista delle sezioni orizzontale subito dopo header-->
+    <div class="pad doppia-lista-lati post-header">
+        <ul class="separatore">
+            <li><a href="#">Sezione 1</a></li>
+            <li><a href="#">Sezione 2</a></li>
+            <li><a href="#">Sezione 3</a></li>
+            <li><a href="#">Sezione 4</a></li>
+        </ul>
+        <ul class="lista-barrata">
+            <li><a href="#" title="Torino">TORINO </a></li>
+            <li class="dropdown"><a href="#" title="Edizioni Locali">EDIZIONI LOCALI V</a>
+                <ul class="submenu">
+                    <li><a href="#">Città 1</a></li>
+                    <li><a href="#">Città 2</a></li>
+                    <li><a href="#">Città 3</a></li>
+                    <li><a href="#">Città 4</a></li>
+                    <li><a href="#">Città 5</a></li>
+                    <li><a href="#">Città 6</a></li>
+                    <li><a href="#">Città 7</a></li>
+                    <li><a href="#">Città 8</a></li>
+                </ul>
+            </li>
+            <!--menù a tendina non funzionante, dato che per poter vedere l'elenco clickando col mouse servirebbe JS;
+            Rispetto a originale il menù a tendina funziona se passo sopra col mouse all'elemento-->
+        </ul>
+    </div>
+
+    <main class="pad">
+
+        <section class="argomento">
+            <h1>Gli editoriali</h1>
+            <ul class="lista-articoli-scorribili">
+                <li><article class="articolo-scorrevole"><a href="#"><img src="images/8.jpg"></a>
+                    <div class="testo-articolo">
+                        <a href="#"><h2> Notizia 1</h2></a>
+                        <h6>AUTORE A</h6>
+                    </div>
+                </article></li>
+                <li><article class="articolo-scorrevole"><a href="#"><img src="images/3.jpg"></a>
+                    <div class="testo-articolo">
+                        <a href="#"><h2> Notizia 2</h2></a>
+                        <h6>AUTORE A</h6>
+                    </div>
+                </article></li>
+                <li><article class="articolo-scorrevole"><a href="#" ><img src="images/7.jpg"></a>
+                    <div class="testo-articolo">
+                        <a href="#"><h2> Notizia 3</h2></a>
+                        <h6>AUTORE A</h6>
+                    </div>
+                </article></li>
+                <li><article class="articolo-scorrevole"><a href="#"><img src="images/5.jpg"></a>
+                    <div class="testo-articolo">
+                        <a href="#"><h2> Notizia 4</h2></a>
+                        <h6>AUTORE A</h6>
+                    </div>
+                </article></li>
+                <li><article class="articolo-scorrevole"><a href="#"><img src="images/9.jpg"></a>
+                    <div class="testo-articolo">
+                        <a href="#"><h2> Notizia 5</h2></a>
+                        <h6>AUTORE A</h6>
+                    </div>
+                </article></li>
+                <li><article class="articolo-scorrevole"><a href="#"><img src="images/6.jpg"></a>
+                    <div class="testo-articolo">
+                        <a href="#"><h2> Notizia 6</h2></a>
+                        <h6>AUTORE A</h6>
+                    </div>
+                </article></li>
+            </ul>
+        </section>
+
+        <section class="argomento">
+            <h1>In evidenza</h1>
+            <a href="#"><img src="images/1.jpg"></a>
+            <div class="testo-articolo">
+                <a href="#"><h2>Titolo della notizia messa in evidenza</h2></a>
+                <h6>A CURA DELLA REDAZIONE WEB</h6><!--Tutti gli autori di articoli da fare nello stesso formato (classe author)-->
+            </div>
+        </section>
+
+        <section>
+            <ul class="lista-articoli-non-scorribili">
+                <li><article class="articolo-non-scorribile"><a href="#"><img src="images/1.jpg"></a><div class="testo-articolo">
+                    <h5>ARGOMENTO 1</h5><a href="#"><h2>Notizia 1</h2></a><h6>AUTORE A</h6>
+                </div></article></li>
+                <li><article class="articolo-non-scorribile"><a href="#"><img src="images/2.jpg"></a><div class="testo-articolo">
+                    <h5>ARGOMENTO 2</h5><a href="#"><h2>Notizia 1</h2></a><h6>AUTORE B</h6>
+                </div></article></li>
+                <li><article class="articolo-non-scorribile"><a href="#"><img src="images/3.jpg"></a><div class="testo-articolo">
+                    <h5>ARGOMENTO 3</h5><a href="#"><h2>Notizia 1</h2></a><h6>AUTORE A</h6>
+                </div></article></li>
+                <li><article class="articolo-non-scorribile"><a href="#"><img src="images/4.jpg"></a><div class="testo-articolo">
+                    <h5>ARGOMENTO 4</h5><a href="#"><h2>Notizia 1</h2></a><h6>AUTORE D</h6>
+                </div></article></li>
+                <li><article class="articolo-non-scorribile"><a href="#"><img src="images/9.jpg"></a><div class="testo-articolo">
+                    <h5>ARGOMENTO 5</h5><a href="#"><h2>Notizia 1</h2></a><h6>AUTORE E</h6>
+                </div></article></li>
+            </ul>
+        </section>
+
+        <section class="argomento">
+            <h1>Argomento 1</h1>
+        </section>
+
+    </main>
+
+<!--Pié di pagina, contiene informazioni sul sito, una lista di sezioni e un altra sulle informazioni "legali"-->
+    <footer class="pad">
+
+    </footer>
+
+</body>
+</html>
