@@ -18,7 +18,7 @@ h1, h2, h4, h5, h6{
 }
 
 .pad{
-    padding: 0 14vw;
+    padding: 0 15vw;
     margin: 0 auto;
 }
 
@@ -187,6 +187,10 @@ ul{
     background-color: #f0f0f0;
 }
 
+.argomento{
+    margin-bottom: 50px;
+}
+
 .argomento h1{
     text-decoration: 1px underline;
     border-bottom: 1px solid lightgray;
@@ -353,10 +357,58 @@ ul{
     }
 }
 
+.lista-video-articoli{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+}
+
+.lista-video-articoli li{
+    width: 300px;
+
+    flex: 0 0 auto;
+}
+
+.video-articolo{
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2f2f2f;
+    height: 100%;
+}
+
+.video-articolo video{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    filter: brightness(80%);
+}
+
+.video-articolo video:hover{
+    filter: brightness(1.2);
+}
+
+.video-articolo .testo-articolo h2, .video-articolo .testo-articolo h6{
+    color: white;
+    margin: 10px 20px;
+}
+
+.video-articolo .testo-articolo h2:hover{
+    color: lightblue;
+}
+
 footer{
     background-color: #003366;
     color: white;
-    height:470px;
+    height: 470px;
 }
 
 .footer-top{
